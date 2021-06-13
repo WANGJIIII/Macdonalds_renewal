@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Macdonalds</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1{
+	font-size: 1rem;
+	font-weight: 400;
+	color: #ffffff;
+}	
+
+h2{
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+h3{
+	font-size: 1.4rem;
+	font-weight: 800;
+}
+
+h4{
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+h5{
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #DA291C;
+}
+
+h6{
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+span{
+	font-size: 16px;
+}
+
+button{
+	font size: 0.8rem;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	background-color: #FFC72C;
+	color: black;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+button:hover{
+	background-color: #DA291C;
+}
+
+
+.navbar{
+	font-size: 16px;
+	font-weight: 600;
+	top: 0;
+	left: 0;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-lightb .navbar-nav .nav-link{
+	padding: 0 20px;
+	color: #000000;
+	transition: 0.3s ease;
+	/* word-spacing: 100px; */
+}
+
+.nav-link{
+	margin-right: 30px;
+}
+
+.navbar-light .navbar-toggler{
+	border: none;
+	outline: none;
+}
+
+#bar{
+	font-size: 1.5rem;
+	padding: 7px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active{
+	color: #FFC72C;
+}
+		
+#home{
+	background-image: url(https://i.postimg.cc/26my1Pgk/lidye-1-Shk-Pk-Nk-Nw-unsplash.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+
+#home p{
+	color: #ffffff;
+}
+
+/* Best-menu start */
+#Best-menu .one img{
+	width: 350px;
+	height: 350px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin: 50px;
+}
+
+#Best-menu .one .detail{
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	top: 0;
+	left: 0;
+	transition: 0.3s ease;
+	margin: 50px;
+}
+
+#Best-menu .one:hover .detail{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#Best-menu .one .detail button{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	color: black;
+	background: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+	padding: 2.5px;
+	transform: translateY(30px);
+	transition: 0.3s ease;
+}
+
+#Best-menu .one .detail button:hover{
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+		
+#Best-menu .one:nth-child(1) .detail{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#Best-menu .one:nth-child(2) .detail{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#Best-menu .one:nth-child(3) .detail{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#Best-menu{
+	margin-left: 30px;
+}
+
+.Best{
+	margin-left: 80px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+/* feture start */
+
+.product{
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+.product img{
+	transition: 0.3s all;
+}
+
+.product:hover img{
+	opacity: 0.7;
+}
+
+.product .more-button{
+	background-color: #FFC72C;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: 0.3s all;
+		}
+
+.product:hover .more-button{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+hr{
+	width: 40px;
+	height: 1.5px;
+	background-color: #DA291C;
+}
+
+/* Footer start */
+
+footer{
+	background-color: #222222;
+}
+
+footer h4{
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+footer li{
+	padding-bottom: 4px;
+}
+
+footer li a{
+	font-size: 0.8rem;
+	color: #d8d8d8;
+}
+
+footer li a:hover{
+	font-size: 0.8rem;
+	color: #d8d8d8;
+}
+
+footer p{
+	color: #999999;
+	font-size: 0.8rem;
+}
+
+footer .copyright a{
+	color: #000000;
+	width: 38px;
+	height: 38px;
+	background-color: #ffffff;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	transition: 0.3s ease;
+	margin: 0 5px;
+}
+
+footer .copyright a:hover{
+	color: #ffffff;
+	background-color: #DA291C;
+}
+
+
+.pb-2{
+	margin-bottom: 25px;
+}
+
+.calorie{
+	color: #ffffff;
+}
+	</style>
+
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+  <div class="container">
+    <img src="https://i.postimg.cc/m26tD1mr/5a35577aaebd88-1461414415134452427157-3.png" width="60px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i id="bar" class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">메뉴소개</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">브랜드스토리</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">이벤트</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Detail_Pg.html">장바구니</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+	<section id="home">
+		<div class="container">
+			<h5>THE BTS 세트 출시</h5>
+			<h1>맥너겟 10조각, 후렌치 후라이와 음료,</h1>
+			<p>그리고 BTS 멤버들이 직접 선택한 스위트 칠리 소스와<br> 케이준 소스를 만나보세요! <br> 또한 맥도날드 앱에서 THE BTS 세트도 즐기고 이벤트에 참여하세요!</p>
+			<button>더보기</button>
+		</div>
+	</section>
+
+	<div class="Best">월간 베스트 메뉴</div>
+	<section id="Best-menu" class="w-100">
+		<div class="row p-0 m-0">
+			<div class="one col-lg-4 col-md-12 col-12 p-0">
+				<img class="img-fluid" src="https://i.postimg.cc/qvkvdzz1/image.jpg">
+				<div class="detail">
+					<h2>Supreme Shrimp Burger</h2>
+					<h3>5,900won</h3>
+					<h4 class="calorie">calorie : 432Kcal</h4>
+					<button class="text-button">구매하기</button>
+			</div>
+		</div>
+
+		<div class="one col-lg-4 col-md-12 col-12 p-0">
+				<img class="img-fluid" src="https://i.postimg.cc/6qX8SKgR/image.jpg">
+				<div class="detail">
+					<h2>Bacon Tomato<br> Deluxe</h2>
+					<h3>7,900won</h3>
+					<h4 class="calorie">calorie : 545Kcal</h4>
+					<button class="text-button">구매하기</button>
+			</div>
+		</div>	
+
+		<div class="one col-lg-4 col-md-12 col-12 p-0">
+				<img class="img-fluid" src="https://i.postimg.cc/j2FLjTmD/image.jpg">
+				<div class="detail">
+					<h2>McSpicy® Shanghai Burger</h2>
+					<h3>5,900won</h3>
+					<h4 class="calorie">calorie : 494Kcal</h4>
+					<button class="text-button">구매하기</button>
+			</div>
+		</div>
+	</div>			
+	</section>
+
+	<section id="feature" class="my-5 pb-5">
+		<div class="container text-center mt-5 py-5">
+			<h3>우리의 4가지 약속</h3>
+			<hr class="mx-auto">
+			<p>QSC&V : Quality, Service, Cleanliness and Value</p>
+		</div>
+		<div class="row mx-auto container-fluid">
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/cJDsPYgW/image.jpg">
+				<h4 class="info">Quality</h4>
+				<h4 class="info"><span>퀄리티</span></h4>
+				<button class="more-button">더보기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/2StqBPGh/image.jpg">
+				<h4 class="info">Service</h4>
+				<h4 class="info"><span>서비스</span></h4>
+				<button class="more-button">더보기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/NGx5xybg/image.jpg">
+				<h4 class="info">Cleanliness</h4>
+				<h4 class="info"><span>청결</span></h4>
+				<button class="more-button">더보기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/T3K1Gtxw/image.jpg">
+				<h4 class="info">Value</h4>
+				<h4 class="info"><span>가치</span></h4>
+				<button class="more-button">더보기</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="mt-5 py-5">
+		<div class="row container mx-auto pt-5">
+			<div class="footer-one col-lg-3 col-md-6 col-12">
+				<img src="https://i.postimg.cc/FHhRkh0Y/5a35577aaebd88-1461414415134452427157.png" width="60px">
+				<p class="pt-4">전세계 120개국 3만 7천여 개의 매장에서 매일 6,900만명의 고객들에게 제품과 서비스를 제공하고 있는 맥도날드입니다.
+			</div>
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Featured</h4>
+				<ul class="text-uppercase list-unstyled">
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">SERVICE</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="#">BRAND</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="#">BRAND-STORY</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Contact Us</h4>
+				<div>
+					<h4 class="text-uppercase">Address</h4>
+					<p>서울특별시 종로구 종로51 종로타워빌딩 14층 한국맥도날드</p>
+				</div>
+				<div>
+					<h4 class="text-uppercase">Phone</h4>
+					<p>1599-0505</p>
+				</div>
+
+				<div>
+					<h4 class="text-uppercase">E-mail</h4>
+					<p>DataPrivacy@kr.mcd.com</p>
+				</div>
+			</div>
+
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Instagram</h4>
+				<div class="row">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/SNqvzKxF/1.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/nVTv0V1t/2.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/9F7QzJ0N/3.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/PNshmnJV/4.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/y8TgYvrC/5.jpg">
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="copyright mt-5">
+			<div class="row container mx-auto">
+				
+				<div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+					<img src="https://i.postimg.cc/T3FCd2yD/payment.png">
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

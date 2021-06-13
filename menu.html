@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>menu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+h2{
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 1.4rem;
+	font-weight: 800;
+}
+
+h4{
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.navbar{
+	font-size: 16px;
+	font-weight: 600;
+	top: 0;
+	left: 0;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-lightb .navbar-nav .nav-link{
+	padding: 0 20px;
+	color: #000000;
+	transition: 0.3s ease;
+	/* word-spacing: 100px; */
+}
+
+.nav-link{
+	margin-right: 30px;
+}
+
+.navbar-light .navbar-toggler{
+	border: none;
+	outline: none;
+}
+
+#bar{
+	font-size: 1.5rem;
+	padding: 7px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active {
+	color: #FFC72C;
+}
+
+button{
+	font size: 0.8rem;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	background-color: #FFC72C;
+	color: black;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+button:hover{
+	background-color: #DA291C;
+}
+
+/* feture start */
+
+.product{
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+.product img{
+	transition: 0.3s all;
+}
+
+.product:hover img{
+	opacity: 0.7;
+}
+
+.product .more-button{
+	background-color: #FFC72C;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: 0.3s all;
+}
+
+.product:hover .more-button{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+hr{
+	width: 40px;
+	height: 1.5px;
+	background-color: #DA291C;
+	margin-left: 15px;
+}
+
+.choose{
+	margin-left: 15px;
+	font-weight: 600;
+}
+
+.product img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Footer start */
+
+footer{
+	background-color: #222222;
+}
+
+footer h4{
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+footer li{
+	padding-bottom: 4px;
+}
+
+footer li a{
+	font-size: 0.8rem;
+	color: #d8d8d8;
+}
+
+footer li a:hover{
+	font-size: 0.8rem;
+	color: #d8d8d8;
+}
+
+footer p{
+	color: #999999;
+	font-size: 0.8rem;
+}
+
+footer .copyright a{
+	color: #000000;
+	width: 38px;
+	height: 38px;
+	background-color: #ffffff;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	transition: 0.3s ease;
+	margin: 0 5px;
+}
+
+footer .copyright a:hover{
+	color: #ffffff;
+	background-color: #DA291C;
+}
+
+
+.font-weight-bold{
+	margin-left: 15px;
+}
+	</style>
+
+</head>
+<body>
+
+	<!--navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+  <div class="container">
+    <img src="https://i.postimg.cc/m26tD1mr/5a35577aaebd88-1461414415134452427157-3.png" width="60px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i id="bar" class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link active" href="menu.html">메뉴소개</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">브랜드스토리</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">이벤트</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="detail_pg.html">장바구니</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+	<section id="feature" class="my-5 py-5">
+		<div class="container mt-5 py-5">
+			<h2 class="font-weight-bold">햄버거 단품 메뉴</h2>
+			<hr>
+			<p class="choose">16가지 메뉴에서 기분좋게 선택해봐요!</p>
+		</div>
+		<div class="row mx-auto container">
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/4y67HgQw/1.jpg">
+				<h4 class="info">McSpicy® Shanghai Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/vBWH3vxZ/image.jpg">
+				<h4 class="info">Big Mac®</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/9fhkyt2p/2.jpg">
+				<h4 class="info">Triple Cheeseburger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/9X9w4Gx0/3.jpg">
+				<h4 class="info">1955® Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/7Yw2z5Jk/4.jpg">
+				<h4 class="info">McChicken® Mozzarella</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/qMWHY3cf/5.jpg">
+				<h4 class="info">Double Bulgogi Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/yYCbZCHR/6.jpg">
+				<h4 class="info">Shrimp Beef Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/T2tcR8PG/7.jpg">
+				<h4 class="info">Bacon Tomato Deluxe</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/VkPqLzXS/8.jpg">
+				<h4 class="info">Quarter Pounder® with Cheese</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/bJV5KZDS/9.jpg">
+				<h4 class="info">Double Cheeseburger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/0NRK0nVb/10.jpg">
+				<h4 class="info">Double Filet-O-Fish</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/YC0QR7J0/11.jpg">
+				<h4 class="info">Egg Bulgogi Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/Rqr2RG0V/12.jpg">
+				<h4 class="info">Filet-O-Fish</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/Prjj1rvb/13.jpg">
+				<h4 class="info">Bulgogi Burger</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/CKWtYmjC/14.jpg">
+				<h4 class="info">Quarter Pounder® with Cheese</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+			<div class="product text-center col-1g-4 col-md-3 col-12">
+				<img class="img-fluid mb-3" src="https://i.postimg.cc/ZKTQT9yQ/15.jpg">
+				<h4 class="info">Double Quarter Pounder® with Cheese</h4>
+				<button class="more-button">구매하기</button>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<footer class="mt-5 py-5">
+		<div class="row container mx-auto pt-5">
+			<div class="footer-one col-lg-3 col-md-6 col-12">
+				<img src="https://i.postimg.cc/FHhRkh0Y/5a35577aaebd88-1461414415134452427157.png" width="60px">
+				<p class="pt-4">전세계 120개국 3만 7천여 개의 매장에서 매일 6,900만명의 고객들에게 제품과 서비스를 제공하고 있는 맥도날드입니다.
+			</div>
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Featured</h4>
+				<ul class="text-uppercase list-unstyled">
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">SERVICE</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="#">BRAND</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="#">BRAND-STORY</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Contact Us</h4>
+				<div>
+					<h4 class="text-uppercase">Address</h4>
+					<p>서울특별시 종로구 종로51 종로타워빌딩 14층 한국맥도날드</p>
+				</div>
+				<div>
+					<h4 class="text-uppercase">Phone</h4>
+					<p>1599-0505</p>
+				</div>
+
+				<div>
+					<h4 class="text-uppercase">E-mail</h4>
+					<p>DataPrivacy@kr.mcd.com</p>
+				</div>
+			</div>
+
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h4 class="pb-2">Instagram</h4>
+				<div class="row">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/SNqvzKxF/1.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/nVTv0V1t/2.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/9F7QzJ0N/3.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/PNshmnJV/4.jpg">
+					<img class="img-fluid w-25 h-100 m-2" src="https://i.postimg.cc/y8TgYvrC/5.jpg">
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="copyright mt-5">
+			<div class="row container mx-auto">
+				
+				<div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+					<img src="https://i.postimg.cc/T3FCd2yD/payment.png">
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</html>
